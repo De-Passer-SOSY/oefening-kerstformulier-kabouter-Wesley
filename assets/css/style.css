@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap');
-
 body {
    font-family: Roboto, "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("../img/bg-stars.gif");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,9 +13,81 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: #bd0008;
+}
+
+input, textarea, select {
+    margin-bottom: 40px;
+}
+
+select {
+    color: #bd0008;
 }
 
 header img{
     height: 5em;
     width: auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#informationField {
+    background-color: #d3d68c;
+}
+
+#informationField label {
+    display: flex;
+    flex-direction: column;
+}
+
+#pleaseField {
+    background-color: #542f2c;
+}
+
+#pleaseField h1 {
+    color: #f39809;
+}
+
+#pleaseField label, #pleaseField p {
+    color: #fff;
+}
+
+#requestField {
+    background-color: #b20000;
+}
+
+#requestField > * {
+    color: #fff;
+}
+
+#requestField > textarea {
+    color: #000;
+}
+
+#root {
+    max-width: 75%;
+    margin: auto;
+}
+
+#pageTitel {
+    font-size: xx-large;
+}
+
+#submitLabel {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submitLabel > * {
+    background-color: #84881a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }

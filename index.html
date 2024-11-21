@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>wishlist</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<section id="root">
   <header>
     <img src="assets/img/xmas-tree.gif" height="304" width="294" alt="kerstboom">
-    <h1>make-a-wishlist for Santa!</h1>
+    <h1 id="pageTitel">Make-a-wishlist for Santa!</h1>
   </header>
 
 <main>
   <form>
-    <fieldset>
-      <h3>Some information about you</h3>
-    </fieldset>
-    <fieldset>
-      
-    </fieldset>
-    <fieldset>
+    <fieldset id="informationField">
+      <h1>Some information about you</h1>
+      <label>
+        Who are you?
+        <input type="text">
+      </label>
+
+      <label>
+        Where shall we mail your pending approval to?
+        <input type="email" placeholder="someone@somewhere.com">
+      </label>
+
+      <label>
+        Can E.T. phone home?
+        <input type="text">
+      </label>
+
+      <label>
+        Where are you from?
+        <select>
+          <option>Earth</option>
+          <option>Mars</option>
+          <option>Moon</option>
+        </select>
+      </label>
 
     </fieldset>
+
+    <fieldset id="pleaseField">
+
+    <h1>Something to please Santa</h1>
+    <p>Which do you like better: the elves or the reindeer?</p>
+    <section>
+      <input type="radio" id="optionElves" name="optionsBetter">
+      <label for="optionElves">Elves</label>
+
+      <input type="radio" id="optionReindeer" name="optionsBetter">
+      <label for="optionReindeer">Reindeer</label>
+    </section>
+
+    <p>What do you usually decorate your x-mas tree with?</p>
+
+    <section>
+      <input type="checkbox" name="optionsDecoration" id="optionBalls">
+      <label for="optionBalls">Balls</label>
+
+      <input type="checkbox" name="optionsLights" id="optionLights">
+      <label for="optionLights">Lights</label>
+
+      <input type="checkbox" name="optionsSnow" id="optionSnow">
+      <label for="optionSnow">Snow</label>
+
+      <input type="checkbox" name="optionsLittleMen" id="optionLittleMen">
+      <label for="optionLittleMen">Little men</label>
+
+      <input type="checkbox" name="optionsFireworks" id="optionFireworks">
+      <label for="optionFireworks">Fireworks!</label>
+    </section>
+
+    <label for="favouriteMovie">What is your favourite x-mas movie</label>
+    <input type="text" id="favouriteMovie">
+
+    <label for="treesOwned">How many x-mas trees do you own?</label>
+    <input type="text" id="treesOwned">
+
+
+    </fieldset>
+
+    <fieldset id="requestField">
+      <h2>At last... your request</h2>
+      <label for="requestArea">So, what will it be?</label>
+      <textarea id="requestArea"></textarea>
+
+    </fieldset>
+
+    <label id="submitLabel">
+      <input type="submit" value="send to santa!">
+    </label>
   </form>
 </main>
+
+</section>
 </body>
 </html>

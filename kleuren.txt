@@ -15,9 +15,9 @@ Kleur titel: #f39809
 Derde blok
 ----------
 Achtergrondkleur: #b20000
-Kleur titel: #ffffff
+Kleur titel: #fff
 
 Knop onderaan
 -------------
 Achtergrondkleur: #84881a
-Voorgrondkleur: #ffffff
+Voorgrondkleur: #fff
