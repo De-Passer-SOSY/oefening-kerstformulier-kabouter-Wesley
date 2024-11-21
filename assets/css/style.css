@@ -2,6 +2,8 @@
 body {
    font-family: Roboto, "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url("../img/bg-stars.gif");
+    max-width: 75%;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,11 +72,6 @@ fieldset {
     color: #000;
 }
 
-#root {
-    max-width: 75%;
-    margin: auto;
-}
-
 #pageTitel {
     font-size: xx-large;
 }
@@ -90,4 +87,18 @@ fieldset {
     padding: 10px;
     border-radius: 5px;
     border: none;
+}
+
+#informationField input,#informationField select {
+    border: #878C18 2px solid;
+}
+
+#pleaseField input {
+    border: #F39809 2px solid;
+}
+
+.selectableOptions {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }

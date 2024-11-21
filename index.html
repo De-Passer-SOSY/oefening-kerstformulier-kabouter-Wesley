@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<section id="root">
   <header>
     <img src="assets/img/xmas-tree.gif" height="304" width="294" alt="kerstboom">
     <h1 id="pageTitel">Make-a-wishlist for Santa!</h1>
@@ -46,31 +45,45 @@
 
     <h1>Something to please Santa</h1>
     <p>Which do you like better: the elves or the reindeer?</p>
-    <section>
-      <input type="radio" id="optionElves" name="optionsBetter">
-      <label for="optionElves">Elves</label>
+    <section class="selectableOptions">
+      <label>
+        <input type="radio" name="optionsBetter">
+        Elves
+      </label>
 
-      <input type="radio" id="optionReindeer" name="optionsBetter">
-      <label for="optionReindeer">Reindeer</label>
+      <label>
+        <input type="radio" name="optionsBetter">
+        Reindeer
+      </label>
     </section>
 
     <p>What do you usually decorate your x-mas tree with?</p>
 
-    <section>
-      <input type="checkbox" name="optionsDecoration" id="optionBalls">
-      <label for="optionBalls">Balls</label>
+    <section class="selectableOptions">
+      <label>
+        <input type="checkbox" name="optionsDecoration">
+        Balls
+      </label>
 
-      <input type="checkbox" name="optionsLights" id="optionLights">
-      <label for="optionLights">Lights</label>
+      <label>
+        <input type="checkbox" name="optionsLights">
+        Lights
+      </label>
 
-      <input type="checkbox" name="optionsSnow" id="optionSnow">
-      <label for="optionSnow">Snow</label>
+      <label>
+        <input type="checkbox" name="optionsSnow">
+        Snow
+      </label>
 
-      <input type="checkbox" name="optionsLittleMen" id="optionLittleMen">
-      <label for="optionLittleMen">Little men</label>
+      <label>
+        <input type="checkbox" name="optionsLittleMen">
+        Little men
+      </label>
 
-      <input type="checkbox" name="optionsFireworks" id="optionFireworks">
-      <label for="optionFireworks">Fireworks!</label>
+      <label>
+        <input type="checkbox" name="optionsFireworks">
+        Fireworks!
+      </label>
     </section>
 
     <label for="favouriteMovie">What is your favourite x-mas movie</label>
@@ -94,7 +107,5 @@
     </label>
   </form>
 </main>
-
-</section>
 </body>
 </html>
